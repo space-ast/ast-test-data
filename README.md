@@ -1,6 +1,6 @@
 # ast-test-data
 
-`ast-nt` 的测试数据仓库，以子模块形式挂载在 `ast-nt` 的 `test/data/` 下。
+`ast-nt` 的测试数据仓库，以子模块形式挂载在 `ast-nt` 的 `test-data/` 下。
 
 目录结构在本仓库根下直接展开：测试代码里 `aTestDataDirGet() + "/ICRF/IAU2006_XYS.dat"`
 即对应本仓库的 `ICRF/IAU2006_XYS.dat`。
@@ -24,8 +24,6 @@
   `aGetDefaultSPKDir()` 与数据目录初始化也要用它们，不属于纯测试数据。
 - **本仓库不使用 git-lfs。** `.gitattributes` 里的 `* -text` 只是禁止行尾转换、
   保证检出字节与原始文件一致，不是 LFS 过滤器，请勿改成 `filter=lfs`。
-- **不要放入 `.cpp` / `.cxx` / `.asc` 文件。** `test/xmake.lua` 会递归 glob 这些扩展名
-  并逐个生成测试目标，数据文件一旦命中会被误当成测试用例。
 - 本仓库内容原为 `ast-data` 的 `Test/` 目录，于 2026-09-29 整体迁出
   （源：ast-data `5bf27d2` 及其之前的历史）。
 - `EOP-All.csv` 目前没有被任何代码或配置引用（代码只用 `EOP-All.txt`），
