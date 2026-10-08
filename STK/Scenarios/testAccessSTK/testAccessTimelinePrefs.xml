@@ -1,0 +1,32 @@
+<?xml version = "1.0" standalone = "yes"?>
+<TimelineLine_Prefs STK_version = "11.6.0">
+    <Views Type = "Content">
+        <ContentView Name = "Scenario Availability">
+            <Row ClassName = "Scenario" ComponentName = "AvailabilityIntervals" DisplayName = "testAccess AvailabilityIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "/Application/STK/Scenario/testAccess" Type = "IntervalList">
+                <Interval Name = "testAccess AvailabilityIntervals" StartTime = "8 Oct 2026 04:00:00.000" StopTime = "12 Oct 2026 04:00:00.000" />
+            </Row>
+            <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/testAccess/Satellite/Satellite1/Sensor/Sensor1;/Application/STK/Scenario/testAccess/Facility/Facility1" Type = "IntervalList">
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "8 Oct 2026 06:24:09.381" StopTime = "8 Oct 2026 06:42:20.356" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "8 Oct 2026 08:46:35.189" StopTime = "8 Oct 2026 09:08:20.931" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "8 Oct 2026 11:11:16.213" StopTime = "8 Oct 2026 11:32:42.494" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "8 Oct 2026 13:37:54.375" StopTime = "8 Oct 2026 13:54:14.889" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 04:44:00.265" StopTime = "9 Oct 2026 04:50:40.163" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 07:01:11.062" StopTime = "9 Oct 2026 07:21:03.800" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 09:24:30.912" StopTime = "9 Oct 2026 09:46:29.164" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 11:49:36.857" StopTime = "9 Oct 2026 12:10:18.410" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 14:17:42.652" StopTime = "9 Oct 2026 14:30:01.175" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "10 Oct 2026 05:18:14.715" StopTime = "10 Oct 2026 05:31:57.502" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "10 Oct 2026 07:38:35.085" StopTime = "10 Oct 2026 07:59:31.798" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "10 Oct 2026 10:02:34.389" StopTime = "10 Oct 2026 10:24:30.615" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "10 Oct 2026 12:28:08.486" StopTime = "10 Oct 2026 12:47:36.876" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "11 Oct 2026 05:54:19.968" StopTime = "11 Oct 2026 06:11:28.249" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "11 Oct 2026 08:16:15.019" StopTime = "11 Oct 2026 08:37:50.045" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "11 Oct 2026 10:40:44.457" StopTime = "11 Oct 2026 11:02:23.745" />
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "11 Oct 2026 13:06:58.064" StopTime = "11 Oct 2026 13:24:30.475" />
+            </Row>
+        </ContentView>
+    </Views>
+    <Views Type = "Time">
+        <TimeView FullViewRulerStartTime = "0.000000" FullViewRulerStopTime = "0.000000" GlobalIntervalComp = "AnalysisInterval" GlobalIntervalCompPath = "/Application/STK/Scenario/testAccess" GlobalStartOffset = "0.000000" GlobalStartTime = "8 Oct 2026 04:00:00.000" GlobalStopOffset = "0.000000" GlobalStopTime = "12 Oct 2026 04:00:00.000" MaxFullViewTime = "0.000000" MinFullViewTime = "0.000000" Name = "Scenario Analysis Period" ViewportStartTime = "0.000000" ViewportStopTime = "0.000000" />
+    </Views>
+</TimelineLine_Prefs>
