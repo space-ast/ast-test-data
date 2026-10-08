@@ -209,6 +209,29 @@ BEGIN SceneWindow
 
         BEGIN Globe
             AA		 Yes
+            BeginCentralBody "Earth"
+                Show		 Yes
+                Textured		 Yes
+                AltOffset		 0
+                Color		 #0000ff
+                SpecularColor		 #545454
+                Shininess		 40
+                ShowWater		 Yes
+                _AGI_PIBEGINTERRAINIMAGECALLDATA "SRC"
+                    BlendMode		 Value
+                    BlendFactor		 1
+                    BlendAltitudeLowerFactor		 1
+                    BlendAltitudeUpperFactor		 0
+                    BlendAltitudeLowerAltitude		 10000
+                    BlendAltitudeUpperAltitude		 100000
+                    TextureRole		 Day
+                    URI		 "file:///Earth_PE_b.jp2"
+                    BeginImageSetDefOn
+                    END
+                    InBase		 Yes
+                    BaseOn		 Yes
+                END
+            EndCentralBody
             BeginCentralBody "Moon"
                 Show		 Yes
                 Textured		 Yes
@@ -249,29 +272,6 @@ BEGIN SceneWindow
                     BlendAltitudeUpperAltitude		 2.5e+06
                     TextureRole		 Day
                     URI		 "file:///Sun.jp2"
-                    BeginImageSetDefOn
-                    END
-                    InBase		 Yes
-                    BaseOn		 Yes
-                END
-            EndCentralBody
-            BeginCentralBody "Earth"
-                Show		 Yes
-                Textured		 Yes
-                AltOffset		 0
-                Color		 #0000ff
-                SpecularColor		 #545454
-                Shininess		 40
-                ShowWater		 Yes
-                _AGI_PIBEGINTERRAINIMAGECALLDATA "SRC"
-                    BlendMode		 Value
-                    BlendFactor		 1
-                    BlendAltitudeLowerFactor		 1
-                    BlendAltitudeUpperFactor		 0
-                    BlendAltitudeLowerAltitude		 10000
-                    BlendAltitudeUpperAltitude		 100000
-                    TextureRole		 Day
-                    URI		 "file:///Earth_PE_b.jp2"
                     BeginImageSetDefOn
                     END
                     InBase		 Yes
@@ -362,15 +362,15 @@ BEGIN SceneWindow
         END
         BEGIN CentralBodyOpts
             BeginCentralBody
+                Name		 "Earth"
+                ShowLabel		 No
+            EndCentralBody
+            BeginCentralBody
                 Name		 "Moon"
                 ShowLabel		 Yes
             EndCentralBody
             BeginCentralBody
                 Name		 "Sun"
-                ShowLabel		 No
-            EndCentralBody
-            BeginCentralBody
-                Name		 "Earth"
                 ShowLabel		 No
             EndCentralBody
         END CentralBodyOpts

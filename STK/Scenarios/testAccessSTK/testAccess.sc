@@ -142,7 +142,7 @@ BEGIN Scenario
             LaunchWindowTrajMETStart		 0
             LaunchWindowTrajMETStop		 900
             LaunchWindowStart		 0
-            LaunchWindowStop		 0
+            LaunchWindowStop		 -259200
             LaunchMETOffset		 0
             LaunchWindowUseSecEphem		 No 
             LaunchWindowUseScenFolderForSecEphem		 Yes
@@ -550,12 +550,6 @@ BEGIN Scenario
         END ExportDataFile
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN RfEnv
@@ -1210,7 +1204,7 @@ BEGIN Scenario
                     BEGIN MapAttributes
                         PrimaryBody		 Earth
                         SecondaryBody		 Sun
-                        CenterLatitude		 22.09984478667927
+                        CenterLatitude		 22.09984478667928
                         CenterLongitude		 -68.74961481132709
                         ProjectionAltitude		 63621860
                         FieldOfView		 35

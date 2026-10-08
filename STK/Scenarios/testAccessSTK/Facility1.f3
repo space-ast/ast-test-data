@@ -44,7 +44,7 @@ VectorAxesAngleSwapDist		 -0.5
 PlaneSwapDist		 -2.5
 BEGIN GeneralVectorAxes
     PersistentLineWidth		 2
-    Scale		 158.489319
+    Scale		 158.4893189999999
 END
 BEGIN VectorAxes
     BEGIN CrdnDef
@@ -322,10 +322,10 @@ SaveArticStateAsDef		 No
 DontSaveArticFile		 Yes
 ArticulationFileEnabled		 No
 ObscurationToObject		 No
-AzElMaskTranslucency		 0.800000011920929
+AzElMaskTranslucency		 0.7999998927116394
 AzElMaskLineTransparency		 0
 AzElMaskLineThickness		 1
-AzElMaskAtRangeTranslucency		 0.800000011920929
+AzElMaskAtRangeTranslucency		 0.7999998927116394
 AzElMaskAtRangeLineThickness		 1
 AzElMaskAtRangeLineTransparency		 0
 AzElMaskLabelCompassShow		 Yes
@@ -397,7 +397,62 @@ BEGIN DynamicDataText
     AutoSizeWidth		 Yes
     AutoSizeHeight		 Yes
     BGColorIndex		 #999999
-    Version		 0
+    Version		 1
     VertTextAlign		 BOTTOM
     BGTranslucency		 1
+END
+BEGIN AttitudeSphere
+    BEGIN LatLonSphere
+        Show		 No
+        FixScaleToModel		 Yes
+        Scale		 31.62277660168379
+        MinDegDim		 0.1
+        MaxDegDim		 90
+        DegDim		 90
+        FogDistanceFactor		 75
+        LabelType		 EveryOther
+        TransparentLines		 Yes
+        FontIndex		 0
+        LineColorIndex		 #aacd32
+        ZeroDegLineColorIndex		 #ffff00
+        LabelColorIndex		 #ffff00
+        PixelThreshold		 180
+        LabelPointSize		 2
+        LineWidth		 1
+        ZeroDegLineWidth		 2
+        BEGIN CentralBody
+            Name		 Earth
+            Show		 Yes
+            ShowLabel		 No
+            ShowVolume		 No
+            LineWidth		 2
+            PointSize		 1
+            ColorIndex		 #4169e1
+        END
+        BEGIN CentralBody
+            Name		 Moon
+            Show		 Yes
+            ShowLabel		 Yes
+            ShowVolume		 No
+            LineWidth		 2
+            PointSize		 1
+            ColorIndex		 #ffffff
+        END
+        BEGIN CentralBody
+            Name		 Sun
+            Show		 Yes
+            ShowLabel		 Yes
+            ShowVolume		 No
+            LineWidth		 2
+            PointSize		 1
+            ColorIndex		 #ffff00
+        END
+        BEGIN AttSphRefCrdnAxes
+            BEGIN AXES
+                Type		 AXES_LINKTO
+                Name		 Body
+                RelativePath		 Facility/Facility1
+            END AXES
+        END
+    END
 END

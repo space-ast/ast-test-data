@@ -61,7 +61,7 @@ END OrbitFrames
 BEGIN Covariance
     UseProbability		 Yes
     Probability		 95
-    Scale		 2.795484103751791
+    Scale		 2.795483589172363
     NonIntervalLineWidth		 1
     NonIntervalTranslucency		 0
     NonIntervalShow		 No

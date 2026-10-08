@@ -38,12 +38,20 @@ BEGIN Facility
 
         BEGIN AccessConstraints
             LineOfSight IncludeIntervals
+            ElevationAngle Min  0.0000000000e+00    Max  5.0000000000e+01 IncludeIntervals
+            Range Min  4.0000000000e+04 IncludeIntervals
         END AccessConstraints
 
         BEGIN ObjectCoverage
         END ObjectCoverage
 
         BEGIN Desc
+            BEGIN ShortText
+
+            END ShortText
+            BEGIN LongText
+
+            END LongText
         END Desc
 
         BEGIN Atmosphere
@@ -260,6 +268,15 @@ BEGIN Facility
                 MinDisplayRange		 0
                 MaxDisplayRange		 10000000
                 NumAzElAtRangeMaskSteps		 1
+
+                BEGIN RangeContourData
+                    Show		 Off
+                    ShowRangeFill		 Off
+                    RangeFillTranslucency		 0.5
+                    LabelUnits		 4
+                    NumDecimalDigits		 3
+
+                END RangeContourData
 
             END Graphics
 
