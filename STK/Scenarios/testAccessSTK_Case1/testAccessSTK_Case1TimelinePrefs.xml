@@ -14,8 +14,14 @@
                 <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 23:35:20.059" StopTime = "9 Oct 2026 23:43:52.959" />
                 <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "10 Oct 2026 01:14:41.948" StopTime = "10 Oct 2026 01:16:33.449" />
             </Row>
-            <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/testAccessSTK_Case1/Satellite/Satellite1/Sensor/Sensor1;/Application/STK/Scenario/testAccessSTK_Case1/Facility/Facility1" Type = "IntervalList">
-                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 10:46:28.984" StopTime = "9 Oct 2026 10:47:57.130" />
+            <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Satellite-Satellite1-Sensor-SimpleConic-To-Facility-Facility1 AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/testAccessSTK_Case1/Satellite/Satellite1/Sensor/SimpleConic;/Application/STK/Scenario/testAccessSTK_Case1/Facility/Facility1" Type = "IntervalList">
+                <Interval Name = "Satellite-Satellite1-Sensor-SimpleConic-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 10:46:28.984" StopTime = "9 Oct 2026 10:47:57.130" />
+            </Row>
+            <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Satellite-Satellite1-Sensor-Rectangular-To-Facility-Facility1 AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/testAccessSTK_Case1/Satellite/Satellite1/Sensor/Rectangular;/Application/STK/Scenario/testAccessSTK_Case1/Facility/Facility1" Type = "IntervalList">
+                <Interval Name = "Satellite-Satellite1-Sensor-Rectangular-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 10:46:36.264" StopTime = "9 Oct 2026 10:47:49.754" />
+            </Row>
+            <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Satellite-Satellite1-Sensor-ComplexConic-To-Facility-Facility1 AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/testAccessSTK_Case1/Satellite/Satellite1/Sensor/ComplexConic;/Application/STK/Scenario/testAccessSTK_Case1/Facility/Facility1" Type = "IntervalList">
+                <Interval Name = "Satellite-Satellite1-Sensor-ComplexConic-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 10:47:20.509" StopTime = "9 Oct 2026 10:47:49.752" />
             </Row>
         </ContentView>
     </Views>

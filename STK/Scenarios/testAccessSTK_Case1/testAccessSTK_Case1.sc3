@@ -232,29 +232,6 @@ BEGIN SceneWindow
                     BaseOn		 Yes
                 END
             EndCentralBody
-            BeginCentralBody "Moon"
-                Show		 Yes
-                Textured		 Yes
-                AltOffset		 0
-                Color		 #ffffff
-                SpecularColor		 #545454
-                Shininess		 40
-                ShowWater		 No
-                _AGI_PIBEGINTERRAINIMAGECALLDATA "SRC"
-                    BlendMode		 Value
-                    BlendFactor		 1
-                    BlendAltitudeLowerFactor		 1
-                    BlendAltitudeUpperFactor		 0
-                    BlendAltitudeLowerAltitude		 500000
-                    BlendAltitudeUpperAltitude		 2.5e+06
-                    TextureRole		 Day
-                    URI		 "file:///Moon.jp2"
-                    BeginImageSetDefOn
-                    END
-                    InBase		 Yes
-                    BaseOn		 Yes
-                END
-            EndCentralBody
             BeginCentralBody "Sun"
                 Show		 Yes
                 Textured		 No
@@ -272,6 +249,29 @@ BEGIN SceneWindow
                     BlendAltitudeUpperAltitude		 2.5e+06
                     TextureRole		 Day
                     URI		 "file:///Sun.jp2"
+                    BeginImageSetDefOn
+                    END
+                    InBase		 Yes
+                    BaseOn		 Yes
+                END
+            EndCentralBody
+            BeginCentralBody "Moon"
+                Show		 Yes
+                Textured		 Yes
+                AltOffset		 0
+                Color		 #ffffff
+                SpecularColor		 #545454
+                Shininess		 40
+                ShowWater		 No
+                _AGI_PIBEGINTERRAINIMAGECALLDATA "SRC"
+                    BlendMode		 Value
+                    BlendFactor		 1
+                    BlendAltitudeLowerFactor		 1
+                    BlendAltitudeUpperFactor		 0
+                    BlendAltitudeLowerAltitude		 500000
+                    BlendAltitudeUpperAltitude		 2.5e+06
+                    TextureRole		 Day
+                    URI		 "file:///Moon.jp2"
                     BeginImageSetDefOn
                     END
                     InBase		 Yes
@@ -366,12 +366,12 @@ BEGIN SceneWindow
                 ShowLabel		 No
             EndCentralBody
             BeginCentralBody
-                Name		 "Moon"
-                ShowLabel		 Yes
-            EndCentralBody
-            BeginCentralBody
                 Name		 "Sun"
                 ShowLabel		 No
+            EndCentralBody
+            BeginCentralBody
+                Name		 "Moon"
+                ShowLabel		 Yes
             EndCentralBody
         END CentralBodyOpts
         isShowingOverlay		 Yes
@@ -664,22 +664,22 @@ BEGIN SceneWindow
             BEGIN ViewCrdnAxes
                 BEGIN AXES
                     Type		 AXES_LINKTO
-                    Name		 Inertial
-                    AbsolutePath		 CentralBody/Earth
+                    Name		 ICR
+                    RelativePath		 Satellite/Satellite1
                 END AXES
             END
             BEGIN FromViewCrdnPoint
                 BEGIN POINT
                     Type		 POINT_LINKTO
                     Name		 Center
-                    AbsolutePath		 CentralBody/Earth
+                    RelativePath		 Satellite/Satellite1
                 END POINT
             END
             BEGIN ToViewCrdnPoint
                 BEGIN POINT
                     Type		 POINT_LINKTO
                     Name		 Center
-                    AbsolutePath		 CentralBody/Earth
+                    RelativePath		 Satellite/Satellite1
                 END POINT
             END
             fov		 0.785398
@@ -695,24 +695,24 @@ BEGIN SceneWindow
             ZoomUseDistanceToCb		 Yes
             GlobeDetailLevel		 1
             UseLayer		 Yes
-            FromName		 "Earth"
+            FromName		 "Satellite/Satellite1"
             FromRegPosAttView		 "Point"
-            FromPosition		 -3.3465515318250369e+07 -1.0518953850298619e+07  0.0000000000000000e+00
-            FromOffset		 -3.3465515318250369e+07 -1.0518953850298619e+07  0.0000000000000000e+00
-            FromOffsetLLR		  0.0000000000000000e+00 -2.8370485798601357e+00  3.5079753500000000e+07
-            ToName		 "Earth"
+            FromPosition		 -6.7575636195257520e+06 -1.1582954536580932e+06  2.0657850343835896e+06
+            FromOffset		 -7.9431763791195917e+04 -1.1510109030192832e+06  2.0697402226722364e+06
+            FromOffsetLLR		  3.3540100122574232e-02  1.5607318864792410e+00  2.3695907016435489e+06
+            ToName		 "Satellite/Satellite1"
             ToRegPosAttView		 "Point"
-            ToPosition		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
-            ToOffset		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
+            ToPosition		 -6.6781318557345560e+06 -7.2845506388100848e+03 -3.9551882886467515e+03
+            ToOffset		  0.0000000000000000e+00 -0.0000000000000000e+00  0.0000000000000000e+00
             ToOffsetLLR		  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00
             ConstantDistanceType		 None
             ConstantDistanceValue		 1
-            UpVector		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
-            ViewRad		  3.5079753500000000e+07
-            ViewQuat		  9.8842899719020649e-01  0.0000000000000000e+00  0.0000000000000000e+00  1.5168426916975533e-01
+            UpVector		 -9.9943723259094708e-01  1.5206544183123298e-02 -2.9899483690457015e-02
+            ViewRad		  2.3695907016435489e+06
+            ViewQuat		  7.0344059860543562e-01  1.1917180272079908e-02  1.1797840061352757e-02 -7.1055620187137625e-01
             ViewCoordSystem		 From
             ViewFromToMode		 FromTo
-            ViewToCBIMtx		  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
+            ViewToCBIMtx		  1.2412204926587900e-03 -8.7881643569644252e-01 -4.7715839269731930e-01 -5.9896532178527195e-14 -4.7715876025960846e-01  8.7881711266196527e-01 -9.9999922968554755e-01 -1.0908058095067119e-03 -5.9225923153860549e-04
             UseUpAxis		 Yes
             UpAxisType		 Z
             UserDefinedUpAxis		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
@@ -723,9 +723,9 @@ BEGIN SceneWindow
             MinAngleToUpAxis		  8.7266462599716477e-03
             InitUpAxisUp		 Yes
             TempUpAxisUp		 Yes
-            CrossAxis		 -2.9985826012998129e-01  9.5398376497287463e-01  0.0000000000000000e+00
-            DefaultOffset		  3.5079753500000000e+07
-            BaseDefaultOffset		  6.3781370000000000e+06
+            CrossAxis		  9.9994935394807594e-01 -1.0064270407026390e-02  0.0000000000000000e+00
+            DefaultOffset		  2.8558108210563660e+01
+            BaseDefaultOffset		  2.2846486568450928e+01
         END View
 
         BEGIN ViewPathManagerSceneInfo

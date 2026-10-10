@@ -550,12 +550,6 @@ BEGIN Scenario
         END ExportDataFile
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN RfEnv
@@ -1127,7 +1121,7 @@ BEGIN Scenario
 
                 StartTime		 9 Oct 2026 04:00:00.000000000
                 EndTime		 10 Oct 2026 04:00:00.000000000
-                CurrentTime		 9 Oct 2026 10:46:54.084000000
+                CurrentTime		 9 Oct 2026 10:47:21.370000000
                 Direction		 Forward
                 UpdateDelta		 10
                 RefreshDelta		 0.010000
@@ -1210,8 +1204,8 @@ BEGIN Scenario
                     BEGIN MapAttributes
                         PrimaryBody		 Earth
                         SecondaryBody		 Sun
-                        CenterLatitude		 0.7848305719047097
-                        CenterLongitude		 0.2042315187584944
+                        CenterLatitude		 0.09215426135508897
+                        CenterLongitude		 -0.3424777907911221
                         ProjectionAltitude		 63621860
                         FieldOfView		 35
                         OrthoDisplayDistance		 20000000
@@ -1234,7 +1228,7 @@ BEGIN Scenario
                         ShowImageNames		 Off
                         ImageNameFont		 0
                         Projection		 EquidistantCylindrical
-                        Resolution		 Low
+                        Resolution		 High
                         CoordinateSys		 ECF
                         UseBackgroundImage		 On
                         UseBingForBackground		 Off
@@ -1247,10 +1241,10 @@ BEGIN Scenario
                         UseCloudsFile		 Off
                         BEGIN ZoomLocations
                             BEGIN ZoomLocation
-                                CenterLat		 0.7848305719047097
-                                CenterLon		 0.2042315187584944
-                                ZoomWidth		 101.67463313316
-                                ZoomHeight		 39.60634942608216
+                                CenterLat		 0.09215426135508897
+                                CenterLon		 -0.3424777907911221
+                                ZoomWidth		 4.789006073024813
+                                ZoomHeight		 2.859622331374529
                             END ZoomLocation
                         END ZoomLocations
                         UseVarAspectRatio		 No
@@ -1953,11 +1947,24 @@ BEGIN Scenario
             Facility/Facility1		
         END Instance
         Instance Satellite/Satellite1
+            *		
             Satellite/Satellite1		
-            Satellite/Satellite1/Sensor/Sensor1		
+            Satellite/Satellite1/Sensor/ComplexConic		
+            Satellite/Satellite1/Sensor/Rectangular		
+            Satellite/Satellite1/Sensor/SAR		
+            Satellite/Satellite1/Sensor/SimpleConic		
         END Instance
-        Instance Satellite/Satellite1/Sensor/Sensor1
-            Satellite/Satellite1/Sensor/Sensor1		
+        Instance Satellite/Satellite1/Sensor/ComplexConic
+            Satellite/Satellite1/Sensor/ComplexConic		
+        END Instance
+        Instance Satellite/Satellite1/Sensor/Rectangular
+            Satellite/Satellite1/Sensor/Rectangular		
+        END Instance
+        Instance Satellite/Satellite1/Sensor/SAR
+            Satellite/Satellite1/Sensor/SAR		
+        END Instance
+        Instance Satellite/Satellite1/Sensor/SimpleConic
+            Satellite/Satellite1/Sensor/SimpleConic		
         END Instance
     END References
 

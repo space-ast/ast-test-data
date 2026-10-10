@@ -1693,7 +1693,7 @@ BEGIN Satellite
             LaunchWindowTrajMETStart		 0
             LaunchWindowTrajMETStop		 900
             LaunchWindowStart		 0
-            LaunchWindowStop		 0
+            LaunchWindowStop		 -86400
             LaunchMETOffset		 0
             LaunchWindowUseSecEphem		 No 
             LaunchWindowUseScenFolderForSecEphem		 Yes
@@ -2503,7 +2503,10 @@ BEGIN Satellite
 
         Class Sensor
 
-            Sensor1		
+            ComplexConic		
+            Rectangular		
+            SAR		
+            SimpleConic		
 
         END Class
 

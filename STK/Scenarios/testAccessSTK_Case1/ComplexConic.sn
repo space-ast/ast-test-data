@@ -3,16 +3,18 @@ WrittenBy    STK_v11.6.0
 
 BEGIN Sensor
 
-    Name		 Sensor1
+    Name		 ComplexConic
 
     BEGIN Pattern
 
-        BEGIN SimpleCone
+        BEGIN Conical
 
-            ConeAngle		  4.5000000000000000e+01
-            AngularPatternResolution		  4.0000000000000000e+00
+            InnerConeAngle		  1.0000000000000000e+01
+            OuterConeAngle		  4.0000000000000000e+01
+            MinClockAngle		  1.4000000000000000e+02
+            MaxClockAngle		  2.3000000000000000e+02
 
-        END SimpleCone
+        END Conical
 
         DetailedTerrainHorizon		 Yes
 
@@ -61,6 +63,12 @@ BEGIN Sensor
         END ObjectCoverage
 
         BEGIN Desc
+            BEGIN ShortText
+
+            END ShortText
+            BEGIN LongText
+
+            END LongText
         END Desc
 
         BEGIN Refraction
@@ -86,11 +94,11 @@ BEGIN Sensor
 
             BEGIN Attributes
 
-                Inherit		 Yes
-                Show		 Yes
+                Inherit		 No
+                Show		 No
                 LineStyle		 0
                 LineWidth		 1
-                PatternColor		 #ffc457
+                PatternColor		 #ffffff
 
             END Attributes
 
