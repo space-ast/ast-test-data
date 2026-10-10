@@ -1,0 +1,19 @@
+<?xml version = "1.0" standalone = "yes"?>
+<TimelineLine_Prefs STK_version = "11.6.0">
+    <Views Type = "Content">
+        <ContentView Name = "Scenario Availability">
+            <Row ClassName = "Scenario" ComponentName = "AvailabilityIntervals" DisplayName = "testAccessSTK_Case1 AvailabilityIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "/Application/STK/Scenario/testAccessSTK_Case1" Type = "IntervalList">
+                <Interval Name = "testAccessSTK_Case1 AvailabilityIntervals" StartTime = "9 Oct 2026 04:00:00.000" StopTime = "10 Oct 2026 04:00:00.000" />
+            </Row>
+            <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/testAccessSTK_Case1/Satellite/Satellite1;/Application/STK/Scenario/testAccessSTK_Case1/Facility/Facility1" Type = "IntervalList">
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 07:14:25.100" StopTime = "9 Oct 2026 07:17:51.009" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 08:47:53.237" StopTime = "9 Oct 2026 08:54:32.348" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 10:22:56.622" StopTime = "9 Oct 2026 10:29:49.315" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 11:59:04.766" StopTime = "9 Oct 2026 12:03:54.718" />
+            </Row>
+        </ContentView>
+    </Views>
+    <Views Type = "Time">
+        <TimeView FullViewRulerStartTime = "0.000000" FullViewRulerStopTime = "0.000000" GlobalIntervalComp = "AnalysisInterval" GlobalIntervalCompPath = "/Application/STK/Scenario/testAccessSTK_Case1" GlobalStartOffset = "0.000000" GlobalStartTime = "9 Oct 2026 04:00:00.000" GlobalStopOffset = "0.000000" GlobalStopTime = "10 Oct 2026 04:00:00.000" MaxFullViewTime = "0.000000" MinFullViewTime = "0.000000" Name = "Scenario Analysis Period" ViewportStartTime = "0.000000" ViewportStopTime = "0.000000" />
+    </Views>
+</TimelineLine_Prefs>
