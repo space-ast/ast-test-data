@@ -6,10 +6,16 @@
                 <Interval Name = "testAccessSTK_Case1 AvailabilityIntervals" StartTime = "9 Oct 2026 04:00:00.000" StopTime = "10 Oct 2026 04:00:00.000" />
             </Row>
             <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/testAccessSTK_Case1/Satellite/Satellite1;/Application/STK/Scenario/testAccessSTK_Case1/Facility/Facility1" Type = "IntervalList">
-                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 07:14:25.100" StopTime = "9 Oct 2026 07:17:51.009" />
-                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 08:47:53.237" StopTime = "9 Oct 2026 08:54:32.348" />
-                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 10:22:56.622" StopTime = "9 Oct 2026 10:29:49.315" />
-                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 11:59:04.766" StopTime = "9 Oct 2026 12:03:54.718" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 09:07:54.263" StopTime = "9 Oct 2026 09:14:53.937" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 10:42:37.872" StopTime = "9 Oct 2026 10:51:48.245" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 12:19:29.659" StopTime = "9 Oct 2026 12:26:33.914" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 20:25:59.071" StopTime = "9 Oct 2026 20:29:47.635" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 21:59:27.489" StopTime = "9 Oct 2026 22:08:14.911" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 23:35:20.059" StopTime = "9 Oct 2026 23:43:52.959" />
+                <Interval Name = "Satellite-Satellite1-To-Facility-Facility1 AccessIntervals" StartTime = "10 Oct 2026 01:14:41.948" StopTime = "10 Oct 2026 01:16:33.449" />
+            </Row>
+            <Row ClassName = "Access" ComponentName = "AccessIntervals" DisplayName = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" IsDefaultName = "True" IsExpanded = "False" IsGroup = "False" IsHidden = "False" Path = "Access:/Application/STK/Scenario/testAccessSTK_Case1/Satellite/Satellite1/Sensor/Sensor1;/Application/STK/Scenario/testAccessSTK_Case1/Facility/Facility1" Type = "IntervalList">
+                <Interval Name = "Satellite-Satellite1-Sensor-Sensor1-To-Facility-Facility1 AccessIntervals" StartTime = "9 Oct 2026 10:46:28.984" StopTime = "9 Oct 2026 10:47:57.130" />
             </Row>
         </ContentView>
     </Views>

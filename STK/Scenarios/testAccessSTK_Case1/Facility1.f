@@ -9,8 +9,8 @@ BEGIN Facility
 
         CentralBody		 Earth
         DisplayCoords		 Geodetic
-        EcfLatitude		  4.0038609999999998e+01
-        EcfLongitude		 -7.5596599999999995e+01
+        EcfLatitude		  0.0000000000000000e+00
+        EcfLongitude		  0.0000000000000000e+00
         EcfAltitude		  0.0000000000000000e+00
         HeightAboveGround		  0.0000000000000000e+00
         ComputeTrnMaskAsNeeded		 Off
@@ -44,6 +44,12 @@ BEGIN Facility
         END ObjectCoverage
 
         BEGIN Desc
+            BEGIN ShortText
+
+            END ShortText
+            BEGIN LongText
+
+            END LongText
         END Desc
 
         BEGIN Atmosphere
@@ -260,6 +266,15 @@ BEGIN Facility
                 MinDisplayRange		 0
                 MaxDisplayRange		 10000000
                 NumAzElAtRangeMaskSteps		 1
+
+                BEGIN RangeContourData
+                    Show		 Off
+                    ShowRangeFill		 Off
+                    RangeFillTranslucency		 0.5
+                    LabelUnits		 4
+                    NumDecimalDigits		 3
+
+                END RangeContourData
 
             END Graphics
 
