@@ -65,12 +65,6 @@ BEGIN Sensor
         END ObjectCoverage
 
         BEGIN Desc
-            BEGIN ShortText
-
-            END ShortText
-            BEGIN LongText
-
-            END LongText
         END Desc
 
         BEGIN Refraction
@@ -96,8 +90,8 @@ BEGIN Sensor
 
             BEGIN Attributes
 
-                Inherit		 Yes
-                Show		 Yes
+                Inherit		 No
+                Show		 No
                 LineStyle		 0
                 LineWidth		 1
                 PatternColor		 #ffffff

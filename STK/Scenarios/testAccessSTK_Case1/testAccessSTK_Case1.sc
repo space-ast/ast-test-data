@@ -113,6 +113,39 @@ BEGIN Scenario
         Module		 Underseav11.6
     END ScenarioLicenses
 
+    BEGIN QuickReports
+
+        BEGIN Report
+            Name		 Access
+            Type		 Report
+            BaseDir		 Install
+            Style		 Access
+            AGIViewer		 Yes
+            Instance		 Satellite/Satellite1/Sensor/ComplexConic
+            BEGIN InstanceList
+                Instance		 Facility/Facility2
+            END InstanceList
+            BEGIN TimeData
+                BEGIN Section
+                    SectionNumber		 1
+                    SectionType		 4
+                    ShowIntervals		 No
+                    TimeType		 Availability
+                    SamplingType		 Default
+                    TimeBound		 0
+                END Section
+            END TimeData
+            DisplayOnLoad		 Yes
+            FrameType		 0
+            DockCircleID		 0
+            DockID		 0
+            WindowRectLeft		 789
+            WindowRectTop		 270
+            WindowRectRight		 1768
+            WindowRectBottom		 714
+        END Report
+    END QuickReports
+
     BEGIN Extensions
 
         BEGIN ClsApp
@@ -1121,7 +1154,7 @@ BEGIN Scenario
 
                 StartTime		 9 Oct 2026 04:00:00.000000000
                 EndTime		 10 Oct 2026 04:00:00.000000000
-                CurrentTime		 9 Oct 2026 10:47:21.370000000
+                CurrentTime		 9 Oct 2026 10:47:21.369000000
                 Direction		 Forward
                 UpdateDelta		 10
                 RefreshDelta		 0.010000
@@ -1204,8 +1237,8 @@ BEGIN Scenario
                     BEGIN MapAttributes
                         PrimaryBody		 Earth
                         SecondaryBody		 Sun
-                        CenterLatitude		 0.09215426135508897
-                        CenterLongitude		 -0.3424777907911221
+                        CenterLatitude		 -0.6462744747816952
+                        CenterLongitude		 -1.758815336243003
                         ProjectionAltitude		 63621860
                         FieldOfView		 35
                         OrthoDisplayDistance		 20000000
@@ -1241,10 +1274,28 @@ BEGIN Scenario
                         UseCloudsFile		 Off
                         BEGIN ZoomLocations
                             BEGIN ZoomLocation
-                                CenterLat		 0.09215426135508897
-                                CenterLon		 -0.3424777907911221
-                                ZoomWidth		 4.789006073024813
-                                ZoomHeight		 2.859622331374529
+                                CenterLat		 -0.65208479863362
+                                CenterLon		 0.760602161315326
+                                ZoomWidth		 8.197799647481752
+                                ZoomHeight		 5.380883920086199
+                            END ZoomLocation
+                            BEGIN ZoomLocation
+                                CenterLat		 -0.6290895682059013
+                                CenterLon		 -1.61940418795357
+                                ZoomWidth		 0.3320108857230111
+                                ZoomHeight		 0.2179257987634912
+                            END ZoomLocation
+                            BEGIN ZoomLocation
+                                CenterLat		 -0.6446889576473054
+                                CenterLon		 -1.751882584851444
+                                ZoomWidth		 0.04433230262039011
+                                ZoomHeight		 0.02909890270174274
+                            END ZoomLocation
+                            BEGIN ZoomLocation
+                                CenterLat		 -0.6462744747816952
+                                CenterLon		 -1.758815336243003
+                                ZoomWidth		 0.002114022845853106
+                                ZoomHeight		 0.001305719993026866
                             END ZoomLocation
                         END ZoomLocations
                         UseVarAspectRatio		 No
@@ -1928,6 +1979,7 @@ BEGIN Scenario
         Class Facility
 
             Facility1		
+            Facility2		
 
         END Class
 
@@ -1945,6 +1997,9 @@ BEGIN Scenario
         END Instance
         Instance Facility/Facility1
             Facility/Facility1		
+        END Instance
+        Instance Facility/Facility2
+            Facility/Facility2		
         END Instance
         Instance Satellite/Satellite1
             *		
